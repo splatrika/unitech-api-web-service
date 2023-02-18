@@ -7,8 +7,16 @@
   <PropertyGroup Condition=" '$(RunConfiguration)' == 'http' " />
   <ItemGroup>
     <None Remove="EasyUnitech.NetApi" />
+    <None Remove="Controllers\" />
+    <None Remove="Model\" />
+    <None Remove="Filters\" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="EasyUnitech.NetApi" Version="0.1.1" />
+    <PackageReference Include="EasyUnitech.NetApi" Version="0.1.2" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Controllers\" />
+    <Folder Include="Model\" />
+    <Folder Include="Filters\" />
   </ItemGroup>
 </Project>
